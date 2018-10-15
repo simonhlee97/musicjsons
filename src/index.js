@@ -5,7 +5,7 @@ import App from 'components/App';
 
 
 ReactDOM.render(
-    <BrowserRouter>
+	<BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route path='/' component={App} />
     </BrowserRouter>,
   document.querySelector("#root")
